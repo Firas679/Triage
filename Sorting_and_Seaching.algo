@@ -1,0 +1,15 @@
+ALGORITHM Cards
+VAR
+    i,j,x,n:INTEGER;
+    arr:ARRAY_OF INTEGER[n];
+BEGIN
+    FOR i FROM 2 TO n DO
+        j:=i-1;
+    WHILE (j>0 AND arr[j]>arr[i]) DO
+        x=arr[j+1]
+        arr[j+1]=arr[j]
+        arr[j]=x
+        j:=j-1
+    END_WHILE
+    END_FOR
+END
